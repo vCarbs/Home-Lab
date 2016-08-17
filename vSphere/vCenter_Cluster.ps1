@@ -7,12 +7,10 @@ $_this = Get-View -Id 'Folder-group-d1'
 $_this.CreateDatacenter("New Datacenter")
 
 
-
 # ------- Rename_Task -------
 
 $_this = Get-View -Id 'Datacenter-datacenter-47'
 $_this.Rename_Task("Datacenter_Name")
-
 
 
 # ------- CreateClusterEx -------
