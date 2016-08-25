@@ -11,12 +11,14 @@ $vdiPG = "VDI"
 $serverPG = "Server"
 $cloudPG = "Cloud"
 $storagePG = "Storage"
+$nestedesxPG = "Nested-ESX"
 $mgmtVLAN = "5"
 $vdiVLAN = "8"
 $serverVLAN = "10"
 $cloudVLAN = "11"
 $vMotionVLAN = "15"
 $storageVLAN = "15"
+$NestedVLAN = "4095"
 $mgmtvmnic = "vmnic0", "vmnic1"
 $storageIP = "10.0.0.0"
 $storagenetmask = "255.255.255.0"
@@ -51,6 +53,7 @@ $serverpg = New-VirtualPortGroup -VirtualSwitch vSwitch0 -Name $serverPG -VLanId
 $cloudpg = New-VirtualPortGroup -VirtualSwitch vSwitch0 -Name $cloudPG -VLanId $cloudVLAN
 $vdipg = New-VirtualPortGroup -VirtualSwitch vSwitch0 -Name $vdiPG -VLanId $vdiVLAN
 $storagepg = New-VirtualPortGroup -VirtualSwitch vSwitch0 -Name $storagePG -VLanId $storageVLAN
+$nestedesxpg = New-VirtualPortGroup -VirtualSwitch vSwitch0 -Name $nestedesxPG -VLanId $NestedVLAN
 
 
 # Create New Port Groups
